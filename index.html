@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Rachael Chagnon - Professional Day Dreamer</title>
+
+                        
+                        
+        <script>
+            var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+            function init() {
+                canvas = document.getElementById("canvas");
+                anim_container = document.getElementById("animation_container");
+                dom_overlay_container = document.getElementById("dom_overlay_container");
+                var comp=AdobeAn.getComposition("723A78867C294CE0BEC0D9474EBBE2CD");
+                var lib=comp.getLibrary();
+                var loader = new createjs.LoadQueue(false);
+                loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+                loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+                var lib=comp.getLibrary();
+                loader.loadManifest(lib.properties.manifest);
+            }
+            function handleFileLoad(evt, comp) {
+                var images=comp.getImages();	
+                if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+            }
+            function handleComplete(evt,comp) {
+                //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+                var lib=comp.getLibrary();
+                var ss=comp.getSpriteSheet();
+                var queue = evt.target;
+                var ssMetadata = lib.ssMetadata;
+                for(i=0; i<ssMetadata.length; i++) {
+                    ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+                }
+                exportRoot = new lib.dandelionfla();
+                stage = new lib.Stage(canvas);	
+                //Registers the "tick" event listener.
+                fnStartAnimation = function() {
+                    stage.addChild(exportRoot);
+                    createjs.Ticker.framerate = lib.properties.fps;
+                    createjs.Ticker.addEventListener("tick", stage);
+                }	    
+                //Code to support hidpi screens and responsive scaling.
+                AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+                AdobeAn.compositionLoaded(lib.properties.id);
+                fnStartAnimation();
+            }
+            </script>
+
+            <!-- Hotjar Tracking Code for https://jchagnon81.github.io/UX_UI_HW_19/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2388498,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+                        
+    </head>
+                <header class="logo">
+                    <img src="images/logo.png" id="toggle" alt="Rachael Chagnon logo">
+                </header>
+
+        <body onload="init();">
+
+                <section class="heroImg">
+                        <div><h2 id="Designer">Designer</h2></div>
+                        
+                        <div>
+                            <nav>
+                                <ul class="menu">
+                                    <li style="text-decoration: underline"><b>Home</b></li>
+                                    <li><a href="aboutme.html" target="_self">About Me</a></li>
+                                    <li><a href="myskills.html" target="_self">My skills</a></li>
+                                    <li><a href="mywork.html" target="_self">My work</a></li>
+                                    <li><a href="contactme.html" target="_self">Contact me</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    <div id="animation">
+                        <div id="animation_container" style="background-color:rgba(0,0,0, 1.00); width:594px; height:180px">
+                            <canvas id="canvas" width="594" height="180" style="position: absolute; display: block; background-color:rgba(0,0,0, 1.00);"></canvas>
+                            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:594px; height:180px; position: absolute; left: 0px; top: 0px; display: block;">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h1 class="home">WELCOME</h1>
+                            
+
+                       
+                        
+
+                </section>
+
+
+        </body>
+
+
+
+
+
+        <footer>
+            <ul class="footer">
+                <li><a href="https://www.behance.net/jessicacdi9db1" target="_blank">Behance</a></li>
+                <li><a href="https://www.linkedin.com/in/rachael-chagnon-863163189/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/jchagnon81" target="_blank">Github</a></li>
+                <li>Copyright 2021</li>
+            </ul>
+
+            
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+        <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+        <script src="js/dandelionfla.js"></script>
+
+</html>
