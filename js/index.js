@@ -1,5 +1,9 @@
 /* Javascript */
 
+function display() {
+    alert("I'm like a seed in the wind...");
+ }
+
 $(document).ready(function(){
     $('#animation').hide();
 
