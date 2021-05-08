@@ -72,7 +72,8 @@ li a:hover{
     background: -webkit-linear-gradient(#EB7EFF, #9E00BB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
+
 
 #animation div {
     padding: 0px;
@@ -319,11 +320,11 @@ li a:hover{
     }
 
     .workGrid {
-        margin-top: 50px;
+        margin-top: 90px;
         grid-template-columns: 1fr;
         text-align: center;
-        row-gap: 10px;
-        grid-template-rows: 200px 150px 100px 200px 150px 100px 200px 150px 100px 200px 150px 100px;
+        row-gap: 50px;
+        grid-template-rows: 200px 100px 75px 200px 100px 75px 200px 100px 75px 200px 100px 75px;
         grid-template-areas:
         "img"
         "details"
@@ -343,6 +344,6 @@ li a:hover{
 
     .home {
         font-size: 70px;
-      }
-
+    }
+    
 }

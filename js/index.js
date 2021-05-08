@@ -1,8 +1,8 @@
 /* Javascript */
 
-function display() {
+function message() {
     alert("I'm like a seed in the wind...");
- }
+}
 
 $(document).ready(function(){
     $('#animation').hide();
