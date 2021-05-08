@@ -65,7 +65,7 @@
                         
     </head>
                 <header class="logo">
-                    <img src="images/logo.png" id="toggle" alt="Rachael Chagnon logo">
+                    <img src="images/logo.png" id="toggle" class="shadow" alt="Rachael Chagnon logo">
                 </header>
 
         <body onload="init();">
@@ -85,12 +85,13 @@
                             </nav>
                         </div>
 
-                    <div id="animation">
+                    <div id="animation" onclick="message()">
                         <div id="animation_container" style="background-color:rgba(0,0,0, 1.00); width:594px; height:180px">
                             <canvas id="canvas" width="594" height="180" style="position: absolute; display: block; background-color:rgba(0,0,0, 1.00);"></canvas>
                             <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:594px; height:180px; position: absolute; left: 0px; top: 0px; display: block;">
                             </div>
                         </div>
+                        <h3>click the animation to hide it</h3>
                     </div>
                     
                     <h1 class="home">WELCOME</h1>
