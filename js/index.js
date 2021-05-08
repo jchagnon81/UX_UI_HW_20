@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     console.log("Your index.js file is loaded correctly!");
 
-    $("#toggle").on("click", function(){
+    $("#toggle").on("mouseover", function(){
         $("#animation").fadeIn(2500);
         console.log("You clicked on #toggle");
     });
@@ -14,6 +14,12 @@ $(document).ready(function(){
         $("#animation").fadeOut(2500);
         console.log("You clicked on #animation");
     });
+
+    $('#toggle').mouseenter(function() {
+        $(this).css("box-shadow", "3px 3px 3px #7fff00");
+       }).mouseleave(function(){
+         $(this).css("box-shadow", "0px 0px 0px #7fff00");
+     });
 
 });
 

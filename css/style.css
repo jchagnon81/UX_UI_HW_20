@@ -12,6 +12,10 @@ html {
     cursor: pointer;
 }
 
+.shadow:hover {
+
+}
+
 /* Header and Nav */
 
 #Designer {
@@ -78,6 +82,12 @@ li a:hover{
 
 #animation_container:hover {
     cursor: pointer;
+}
+
+#animation p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 
