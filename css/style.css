@@ -365,6 +365,29 @@ li a:hover{
     width: 50%;
 }
 
+.videos video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+}
+
+.casestudyfooter {
+    color: white;
+}
+
+#desktop video{
+    width: 500px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+#mobile video {
+    width: 240px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
 /* Button Code */
 
 .button {
@@ -487,6 +510,16 @@ li a:hover{
 
     .piechart img {
         width: 100%;
+        height: auto;
+    }
+
+    #desktop video{
+        width: 290px;
+        height: auto;
+    }
+
+    #mobile video {
+        width: 200px;
         height: auto;
     }
 
