@@ -286,6 +286,10 @@ li a:hover{
     background-image: linear-gradient(#EE8C64, white);
 }
 
+.jumbotron4 {
+    background-image: linear-gradient(#F29CA5, white);
+}
+
 .margin {
     padding: 75px;
 }
@@ -300,6 +304,7 @@ li a:hover{
 
 .designprocess img {
     width: 100%;
+    padding: 10px;
 }
 
 .mockup2 {
@@ -338,6 +343,14 @@ li a:hover{
 
 .red {
     color: red;
+}
+
+.users img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+    width: 100%;
 }
 
 
@@ -445,10 +458,16 @@ li a:hover{
 
     .margin {
         margin: 0px;
-        padding: 50px;
+        padding: 45px;
     }
 
-    .jumbotron1, .jumbotron2, .jumbotron3 {
+    .jumbotron1, .jumbotron2, .jumbotron3, .jumbotron4 {
         margin: 25px;
     }
+
+    .users img {
+        margin: 0px;
+        padding: 0px;
+    }
+    
 }
