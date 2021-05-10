@@ -268,6 +268,7 @@ li a:hover{
 
 .case_study_mockup {
     background-image: url("../images/mockup1.png");
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -295,7 +296,7 @@ li a:hover{
 }
 
 .margin {
-    padding: 75px;
+    padding: 75px 50px;
 }
 
 .jumbotron h1 {
@@ -311,8 +312,20 @@ li a:hover{
     padding: 10px;
 }
 
+.firstcharacter {
+    color: black;
+    float: left;
+    font-family: 'Source Serif Pro';
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+  }
+
 .mockup2 {
-    width: 75%;
+    width: 90%;
+    padding: 10px;
 }
 
 .card-deck {
@@ -365,11 +378,16 @@ li a:hover{
     width: 50%;
 }
 
+.videos {
+    background-image: linear-gradient(#8575B2, white);
+    padding: 10px 0px;
+}
 .videos video {
     margin-left: auto;
     margin-right: auto;
     display: block;
     padding: 10px;
+    background-color: white;
 }
 
 .casestudyfooter {
@@ -521,6 +539,11 @@ li a:hover{
     #mobile video {
         width: 200px;
         height: auto;
+    }
+
+    .mockup2 {
+        width: 200%;
+        padding: 0px;
     }
 
 }
