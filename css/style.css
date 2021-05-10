@@ -12,10 +12,6 @@ html {
     cursor: pointer;
 }
 
-.shadow:hover {
-
-}
-
 /* Header and Nav */
 
 #Designer {
@@ -251,6 +247,98 @@ li a:hover{
     grid-area: "button";
 }
 
+/*Case Study Code */
+
+
+.casestudy_header {
+    color: white;
+    display: flex;
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-size: 35px;
+}
+
+.casestudybody {
+    background-color: white;
+}
+
+.case_study_mockup {
+    background-image: url("../images/mockup1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.jumbotron1 {
+    background-color: white;
+}
+
+.jumbotron2 {
+    background-image: linear-gradient(#E9D56A, white);
+}
+
+.jumbotron3 {
+    background-image: linear-gradient(#EE8C64, white);
+}
+
+.margin {
+    padding: 75px;
+}
+
+.jumbotron h1 {
+    text-align: center;
+}
+
+.jumbotron h3 {
+    text-align: center;
+}
+
+.designprocess img {
+    width: 100%;
+}
+
+.mockup2 {
+    width: 100%;
+}
+
+.card-deck {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;;
+}
+
+.card {
+    text-align: center;
+}
+
+.insight {
+    border-color: #E9D56A;
+    border-width: 5px;
+    border-style: solid;
+    padding: 10px;
+}
+
+.orange {
+    border-color: #EE8C64;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.purple {
+    border-color: #8575B2;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.red {
+    color: red;
+}
 
 
 /* Button Code */
@@ -344,5 +432,23 @@ li a:hover{
 
     .home {
         font-size: 60px;
-    }    
+    }
+    
+    .casestudy_header {
+        font-size: 20px;
+    
+    }
+
+    .designprocess img {
+        padding: 10px;
+    }
+
+    .margin {
+        margin: 0px;
+        padding: 50px;
+    }
+
+    .jumbotron1, .jumbotron2, .jumbotron3 {
+        margin: 25px;
+    }
 }
