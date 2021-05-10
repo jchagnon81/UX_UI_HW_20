@@ -290,6 +290,10 @@ li a:hover{
     background-image: linear-gradient(#F29CA5, white);
 }
 
+.jumbotron5 {
+    background-image: linear-gradient(#59B2C0, white);
+}
+
 .margin {
     padding: 75px;
 }
@@ -308,14 +312,14 @@ li a:hover{
 }
 
 .mockup2 {
-    width: 100%;
+    width: 75%;
 }
 
 .card-deck {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;;
+    margin-bottom: 15px;;
 }
 
 .card {
@@ -353,6 +357,13 @@ li a:hover{
     width: 100%;
 }
 
+.piechart img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+    width: 50%;
+}
 
 /* Button Code */
 
@@ -456,18 +467,27 @@ li a:hover{
         padding: 10px;
     }
 
+    .mockup2 {
+        width: 100%;
+    }
+
     .margin {
         margin: 0px;
         padding: 45px;
     }
 
-    .jumbotron1, .jumbotron2, .jumbotron3, .jumbotron4 {
+    .jumbotron1, .jumbotron2, .jumbotron3, .jumbotron4, .jumbotron5 {
         margin: 25px;
     }
 
-    .users img {
+    .users, .piechart {
         margin: 0px;
-        padding: 0px;
+        padding: 5px;
     }
-    
+
+    .piechart img {
+        width: 100%;
+        height: auto;
+    }
+
 }
