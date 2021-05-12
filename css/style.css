@@ -3,6 +3,10 @@ html {
     background-color: #708090;
 }
 
+body {
+    font-family: 'Source Serif Pro', serif;
+}
+
 .logo img {
     width: 40%;
     margin-left: 55%;
